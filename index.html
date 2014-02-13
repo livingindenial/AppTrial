@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Charlton's App</title>
+<link href="file:///C|/Program%20Files%20(x86)/Adobe/Adobe%20Dreamweaver%20CS6/Configuration/Third%20Party%20Source%20Code/jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="CSSFiles/slideshow.css" rel="stylesheet" type="text/css">
+<script src="file:///C|/Program%20Files%20(x86)/Adobe/Adobe%20Dreamweaver%20CS6/Configuration/Third%20Party%20Source%20Code/jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="file:///C|/Program%20Files%20(x86)/Adobe/Adobe%20Dreamweaver%20CS6/Configuration/Third%20Party%20Source%20Code/jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="JavascriptFiles/mootools.js" type="text/javascript"></script>
+<script src="JavascriptFiles/slideshow.js" type="text/javascript"></script>
+<script src="JavascriptFiles/backgroundslider.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Welcome to the Gallery</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li ><a href="#gucci"><img src="images/gucci.jpg" alt="gucci" align="absmiddle"  >Gucci Anniversary</a></li>
+            <li><a href="#prada"><img src="images/prada.jpg" alt="prada" align="absmiddle">Prada Launch</a></li>
+			<li><a href="#burberry"><img src="images/burberry.jpg" alt="burberry" align="absmiddle">Burberry Summer Fashion Show</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Charlton's App &copy;</h4>
+	</div>
+</div>
+
+<div data-role="page" id="gucci">
+	<div data-role="header">
+		<h1>Gucci Anniversary</h1>
+		</div>
+	<div data-role="content"> Content
+	  <div data-role="fieldcontain">
+	    <label for="flipswitch">Wanna see some of the photos?</label>
+	    <select name="flipswitch" id="flipswitch" data-role="slider">
+	      <option value="Yes">Yes</option>
+	      <option value="No">No</option>
+        </select>
+      </div>
+	</div>
+
+	<div data-role="footer">
+		<h4><a href="#page" data-role="button" id = "return" data-icon="back" data-iconpos="notext">Button</a>Charlton's App &copy;</h4>
+	</div>
+</div>
+
+<div data-role="page" id="prada">
+	<div data-role="header">
+		<h1>Prada Launch</h1>
+	</div>
+	<div data-role="content"> Content
+	  <div data-role="fieldcontain">
+	    <label for="flipswitch">Wanna Download them?</label>
+	    <select name="flipswitch" id="flipswitch" data-role="slider">
+	      <option value="Yes">Yes</option>
+	      <option value="No">No</option>
+        </select>
+      </div>
+	</div>
+	<div data-role="footer">
+		<h4><a href="#page" data-role="button" id = "return" data-icon="back" data-iconpos="notext">Button</a> Charlton's App &copy;</h4>
+	</div>
+</div>
+
+<div data-role="page" id="burberry">
+	<div data-role="header">
+		<h1>Burberry Summer Fashion Show</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4><a href="#page" data-role="button" id = "return" data-icon="back" data-iconpos="notext">Button</a>Charlton's App &copy;</h4>
+	</div>
+    
+    <script src="jquery-1.6.4.min.js"></script>
+<script src="test.js"></script>
+<script>
+$('#return').click(function()
+{
+	Return.DoIt($('#results'));
+
+});
+
+$('#clear').click(function()
+{
+	$('#results').html('');
+
+});
+</div>
+
+</body>
+</html>
